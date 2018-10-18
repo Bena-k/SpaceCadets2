@@ -87,7 +87,7 @@ public class Executor {
         }
         //System.out.println(endLineNumber);
         //System.out.println("running while loop with variable "+controlVariable.name);
-        while(controlVariable.value != controlValue){
+        while(controlVariable.value != controlValue+1){
             //System.out.println("control variable is: "+controlVariable.name+" the value is: "+controlVariable.value);
             for(int q = lineNumber+1; q < endLineNumber; q++){
                 if(code.get(q)[0].equals("clear")|| code.get(q)[0].equals("incr") || code.get(q)[0].equals("decr")){
